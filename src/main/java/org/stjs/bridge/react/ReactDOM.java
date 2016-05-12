@@ -1,7 +1,10 @@
 package org.stjs.bridge.react;
 
+import org.stjs.bridge.react.internal.Props;
+import org.stjs.bridge.react.internal.ReactClassInterface;
 import org.stjs.bridge.react.internal.ReactComponent;
 import org.stjs.bridge.react.internal.ReactElement;
+import org.stjs.bridge.react.internal.State;
 import org.stjs.javascript.dom.Element;
 import org.stjs.javascript.functions.Callback0;
 
@@ -21,7 +24,9 @@ public class ReactDOM {
 	 * rendered into container, this will perform an update on it and only mutate the DOM as necessary to reflect the latest React component. If
 	 * the optional callback is provided, it will be executed after the component is rendered or updated.
 	 */
-	public static native <C extends ReactElement<?>> ReactComponent<C> render(C element, Element container);
+	//public static native <C extends ReactElement<?>> ReactComponent<C> render(C element, Element container);
+
+	public static native <T extends ReactClassInterface<? extends Props, ? extends State>> T render(ReactElement<T> element, Element container);
 
 	public static native <C extends ReactElement<?>> ReactComponent<C> render(C element, Element container, Callback0 callback);
 
