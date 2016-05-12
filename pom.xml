@@ -38,7 +38,12 @@
             <version>0.14.7</version>
         </dependency>
     </dependencies>
-
+    <distributionManagement>
+        <repository>
+            <id>DropboxM2 Corporate</id>
+            <url>file://${user.home}/Dropbox/m2/repository</url>
+        </repository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
