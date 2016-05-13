@@ -40,9 +40,9 @@ public class React {
 	 * Create and return a new ReactElement of the given type. The type argument can be either an html tag name string (eg. 'div', 'span', etc),
 	 * or a ReactClass (created via React.createClass).
 	 */
-	public static native <P extends Props, C extends ReactClassInterface<P, ?>> ReactElement<C> createElement(Class<C> clazz, P props);
+	public static native <P, C extends ReactClassInterface<P, ?>> ReactElement<C> createElement(Class<C> clazz, P props);
 
-	public static native <P extends Props, C extends ReactClassInterface<P, ?>> ReactElement<C> createElement(Class<C> clazz, P props,
+	public static native <P, C extends ReactClassInterface<P, ?>> ReactElement<C> createElement(Class<C> clazz, P props,
 			Object... children);
 
 	public static native ReactElement<?> createElement(String element, Map<String, Object> props);
