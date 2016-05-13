@@ -57,16 +57,16 @@ public class React {
 	 */
 	public static native <C extends ReactClassInterface<?, ?>> ReactElement<C> cloneElement(ReactElement<C> element);
 
-	public static native <P extends Props, C extends ReactClassInterface<P, ?>> ReactElement<C> cloneElement(ReactElement<C> element, P props);
+	public static native <P, C extends ReactClassInterface<P, ?>> ReactElement<C> cloneElement(ReactElement<C> element, P props);
 
-	public static native <P extends Props, C extends ReactClassInterface<P, ?>> ReactElement<C> cloneElement(ReactElement<C> element, P props,
+	public static native <P, C extends ReactClassInterface<P, ?>> ReactElement<C> cloneElement(ReactElement<C> element, P props,
 			Object... children);
 
 	/**
 	 * Return a function that produces ReactElements of a given type. Like React.createElement, the type argument can be either an html tag name
 	 * string (eg. 'div', 'span', etc), or a ReactClass.
 	 */
-	public static native <P extends Props, C extends ReactClassInterface<P, ?>> Function2<P, Object, ReactElement<C>> createFactory(Class<C> clazz);
+	public static native <P, C extends ReactClassInterface<P, ?>> Function2<P, Object, ReactElement<C>> createFactory(Class<C> clazz);
 
 	public static native Function2<Map<String, String>, Object, ReactElement<?>> createFactory(String type);
 

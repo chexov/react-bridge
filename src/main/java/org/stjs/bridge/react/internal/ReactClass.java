@@ -13,7 +13,7 @@ import org.stjs.javascript.functions.Function0;
  * @param <P> Properties to be used with this component
  * @param <S> Internal state of this component
  */
-public abstract class ReactClass<P extends Props, S extends State> extends ReactClassInterface<P, S> {
+public abstract class ReactClass<P, S extends State> extends ReactClassInterface<P, S> {
 
     /**
      * The name used in debug messages
