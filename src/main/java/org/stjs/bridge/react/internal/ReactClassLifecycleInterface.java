@@ -7,7 +7,7 @@ import org.stjs.javascript.dom.Element;
  * @param <P> the properties class
  * @param <S> the state classc
  */
-public interface ReactClassLifecycleInterface<P extends Props, S extends State> {
+public interface ReactClassLifecycleInterface<P, S extends State> {
 	/**
 	 * Invoked when the component is initially created and about to be mounted. This may have side effects, but any
 	 * external subscriptions or data created by this method must be cleaned up in `componentWillUnmount`.

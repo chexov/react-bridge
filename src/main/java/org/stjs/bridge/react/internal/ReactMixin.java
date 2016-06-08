@@ -3,7 +3,7 @@ package org.stjs.bridge.react.internal;
 import org.stjs.javascript.dom.Element;
 
 @IsReactMixin
-public abstract class ReactMixin<P extends Props, S extends State> extends ReactClassStatefulInterface<P, S>
+public abstract class ReactMixin<P, S extends State> extends ReactClassStatefulInterface<P, S>
 		implements ReactClassLifecycleInterface<P, S> {
 
 	@Override

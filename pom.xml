@@ -4,7 +4,7 @@
 
     <groupId>org.st-js.bridge</groupId>
     <artifactId>react</artifactId>
-    <version>0.13.3.bv6-SNAPSHOT</version>
+    <version>0.14.8.bv6</version>
     <packaging>jar</packaging>
     <name>Strongly-typed JS - Facebook React Bridge Library</name>
 
@@ -33,9 +33,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.webjars</groupId>
+            <groupId>org.webjars.bower</groupId>
             <artifactId>react</artifactId>
-            <version>0.13.3</version>
+            <version>0.14.7</version>
         </dependency>
     </dependencies>
 

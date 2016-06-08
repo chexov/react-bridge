@@ -13,7 +13,7 @@ import org.stjs.javascript.functions.Function0;
  * @param <P> Properties to be used with this component
  * @param <S> Internal state of this component
  */
-public abstract class ReactClass<P extends Props, S extends State> extends ReactClassInterface<P, S> {
+public abstract class ReactClass<P, S extends State> extends ReactClassInterface<P, S> {
 
     /**
      * The name used in debug messages
@@ -83,8 +83,8 @@ public abstract class ReactClass<P extends Props, S extends State> extends React
      *
      * @param partialProps Subset of the next props.
      * @param callback Called after props are updated.
-     * @deprecated
      */
+    @Deprecated
     public native void setProps(P partialProps, Callback0 callback);
 
     /**
@@ -92,8 +92,8 @@ public abstract class ReactClass<P extends Props, S extends State> extends React
      *
      * @param newProps Subset of the next props.
      * @param callback Called after props are updated.
-     * @deprecated
      */
+    @Deprecated
     public native void replaceProps(P newProps, Callback0 callback);
 
     //END ReactClassMixin
