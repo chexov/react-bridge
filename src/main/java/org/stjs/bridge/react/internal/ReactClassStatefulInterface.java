@@ -9,7 +9,7 @@ import org.stjs.javascript.functions.Callback0;
  * @param <P>
  * @param <S>
  */
-public class ReactClassStatefulInterface<P, S extends State> {
+public class ReactClassStatefulInterface<P, S> {
 	/**
 	 * Hold the reference to the elements that have a "ref" key
 	 */
