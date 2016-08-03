@@ -26,7 +26,7 @@ public class ReactDOM {
 	 */
 	//public static native <C extends ReactElement<?>> ReactComponent<C> render(C element, Element container);
 
-	public static native <T extends ReactClassInterface<?, ? extends State>> T render(ReactElement<T> element, Element container);
+	public static native <T extends ReactClassInterface<?, ?>> T render(ReactElement<T> element, Element container);
 
 	public static native <C extends ReactElement<?>> ReactComponent<C> render(C element, Element container, Callback0 callback);
 
