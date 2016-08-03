@@ -47,6 +47,13 @@
     <build>
         <plugins>
             <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-javadoc-plugin</artifactId>
+              <configuration>
+                <failOnError>false</failOnError>
+              </configuration>
+            </plugin>
+            <plugin>
                 <groupId>com.dasberg.maven.plugins</groupId>
                 <artifactId>maven-closure-compiler-plugin</artifactId>
                 <version>${maven-closure-compiler-plugin.version}</version>
